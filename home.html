@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Capture CJR!</title>
+<style>
+    @font-face {
+      font-family: 'NoonnuBasicGothicRegular';
+      src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+  
+    @font-face {
+      font-family: 'Pretendard-Regular';
+      src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+    /* #rectangle 스타일 설정 */
+    #rectangle {
+    position: relative;
+      background-color: #8FDBFF4F;
+      width: 100%;              /* 전체 너비 */
+    height: 500px;
+    }
+  
+
+    header {
+        text-align: left; 
+    }
+    
+    header > h3 {
+        display: inline-block;
+        position: relative;
+    }
+
+    .links {
+        display: inline; 
+        float: right;
+    }
+
+    header > .links > a, button {
+        display: inline-block;
+        font-family: 'Pretendard-Regular';
+        margin-left: 5px; 
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        color : black;
+        margin-top : 60px;
+        margin-right :75px;
+    }
+
+    .links button {
+    background-color: skyblue;   
+    color: white;          
+    border: none;           
+    padding: 10px 20px;      
+    border-radius: 8px;     
+    cursor: pointer;         
+    font-size: 16px;          
+  }
+
+  .links button:hover { /* 마우스 올리면 색 진해짐 */
+    background-color: rgb(117, 182, 207); 
+  }
+
+  
+    /* 메인 텍스트 스타일 설정 */
+    .mainText01 {
+      position: relative;
+      font-family: 'NoonnuBasicGothicRegular';
+      text-align: center;
+      margin: 50px 0;
+    }
+  
+    .mainText01 h1 {
+      line-height: 1.8;
+    }
+
+    .stroketext{
+        font-size: 40px;
+    }
+
+    .characters{
+        position: absolute;
+    }
+
+    .introduceContent01{
+        position: absolute;
+    }
+
+    .coin img{
+        width: 350px;
+        height: auto;
+        top : 200px;
+        left: 250px;
+        position: absolute;
+
+    }
+
+    .contentCoin{
+        position: absolute;
+        font-family: 'Pretendard-Regular';
+        top : 550px;
+        display: inline-block;
+        left: 220px;
+        width: 500px;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+    }
+
+    .ocean img{
+        position: absolute;
+        width: 500px;
+        height: auto;
+        top : 700px;
+        right: 180px;
+    }
+    .contentOcean{
+        position: absolute;
+        font-family: 'Pretendard-Regular';
+        display: inline-block;
+        width: 500px;
+        font-size: 15px;
+        letter-spacing: -0.2px;
+        top : 1050px;
+        right: 180px;
+    }
+
+    .aboutCaptury{
+        position: absolute;
+        font-family: 'Pretendard-Regular';
+        display: inline-block;
+        font-size: 15px;
+        font-weight: bold;
+        top: 1350px;
+        left: 250px;
+    }
+
+    .aboutCaptury2{
+        position: absolute;
+        font-family: 'Pretendard-Regular';
+        display: inline-block;
+        font-size: 15px;
+        top: 1350px;
+        left: 420px;
+    }
+
+    #floor{
+    position: absolute;
+      background-color: white;
+      width: 100%;           
+    height: 200px;
+    top : 1450px;
+    }
+
+    
+  </style>
+</head>
+    <div id="rectangle">
+      <header>
+        <h3 class="logo" style="margin-top: 40px; margin-left: 35px;">
+          <a href="home.html">
+            <img src="sc/logo.svg" alt="Capture CJR Logo" style="height: auto; width: 100%; border: 4px;">
+          </a>
+        </h3>
+        <nav class="links">
+          <a href=".html">Store</a>
+          <a href="map.html">Map</a> 
+          <a href=".html">Who we are</a>
+          <a href=".html">My profile</a>
+          <button onclick="location.href='capturelist.html'">List</button>
+        </nav>
+      </header>
+      <div class="characters">
+      <img src="sc/character01.png" alt="cjr01" style = "margin-top: 100px; margin-left: 110px;">
+      <img src="sc/cjr01.png" alt="cjr02" style= "top: 150px; margin-right: 110px; transform: rotate(-15deg)">
+        </div>
+    <div class="mainIntroduce">
+        <div class="mainText01">
+          <h1>
+            "걸으며 만나는 작은 친구들
+            <br>
+            일상 속 특별한 모험의 시작"
+            <br>
+            <h1 class="stroketext">캡쳐! 캡쮸리!!</h1>
+          </h1>
+        </div>
+    </div>
+
+</div>
+<div class = "introduceContent01">
+    <a class="coin">
+        <img src = "sc/coin.png">
+    </a>
+    <a class = "contentCoin">
+        포인트는 다양한 방법으로 모을 수 있어요. 다양한 캡츄리와 바꿀 수 있게 
+        <br>
+        최대한 포인트를 많이 모으면 좋아요.
+    </a>
+    </a>
+</div>
+<div class = "introduceContent02">
+<a class = "ocean">
+    <img src = "sc/ocean.png">
+</a>
+<a class = "contentOcean">
+    강원도 양양 - 대한민국 강원특별자치도 동해안 중부에 있는 군이다. 동해는 수심이 깊고,북서쪽으로 설악산이 있다. 특산물은 송이와 연어이며 다른 수산물도 풍부하다.
+    설악산과 해수욕장(대표적으로 낙산해수욕장)을 보유하고 있어 자연환경이 
+    깨끗하다. 하조대해수욕장 옆에 있는 중광정해수욕장은 서핑하기 딱 좋은 서피비치로 유명하다.
+</a>
+</div>
+
+<div>
+    <a class = "aboutCaptury">
+        캡쮸리란?
+    </a>
+    <a class = "aboutCaptury2">
+        "걸으며 만나는 '캡쮸리'는 지방 도시의 소멸을 막고자 탄생했습니다. 여러분도 좋은 장소에 갔을 때 '이 순간을 타임캡슐에 담아두고 싶다!'고
+        <br>생각한 적이 있으시죠? 그런 좋은 순간을 포착해 캡슐에 담아낸다는 의미에서 '캡쮸리'라는 이름이 탄생했습니다. 동글동글한 캡슐 디자인은 
+        <br>가챠 캡슐에서 영감을 받아, 순간을 담아내는 캡슐의 모습을 형상화했습니다. 
+        전국 구석구석을 돌며, 좋은 공간과 순간을 만끽하는 캡쮸리를 
+        <br>여러분의 다양한 순간에 함께 포착해 보세요. 캡쮸리도 그걸 원하고 있으니까요!"
+    </a>
+</div>
+
+<footer>
+    <div id = "floor">
+
+    </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,61 @@
+
+    @charset "utf-8";
+    
+    @font-face {
+      font-family: 'NoonnuBasicGothicRegular';
+      src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+  
+    @font-face {
+      font-family: 'Pretendard-Regular';
+      src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+    header {
+        text-align: left; 
+    }
+    
+    header > h3 {
+        display: inline-block;
+        position: relative;
+    }
+
+    .links {
+        display: inline; 
+        float: right;
+    }
+
+    header > .links > a, button {
+        display: inline-block;
+        font-family: 'Pretendard-Regular';
+        margin-left: 5px; 
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        color : black;
+        margin-top : 60px;
+        margin-right :75px;
+    }
+
+    .links button {
+    background-color: skyblue;   
+    color: white;          
+    border: none;           
+    padding: 10px 20px;      
+    border-radius: 8px;     
+    cursor: pointer;         
+    font-size: 16px;          
+  }
+
+  .links button:hover { /* 마우스 올리면 색 진해짐 */
+    background-color: rgb(117, 182, 207); 
+  }
