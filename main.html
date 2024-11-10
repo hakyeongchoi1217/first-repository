@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Main</title>
+<style>
+    @font-face {
+    font-family: 'NoonnuBasicGothicRegular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+    header {
+        text-align: left; 
+    }
+    
+    header > h3 {
+        display: inline-block;
+        position: relative;
+    }
+
+    .links {
+        display: inline; 
+        float: right;
+    }
+
+    header > .links > a, button {
+        display: inline-block;
+        font-family: 'Pretendard-Regular';
+        margin-left: 5px; 
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        color : black;
+        margin-top : 60px;
+        margin-right :75px;
+    }
+
+    .links button {
+    background-color: skyblue;   
+    color: white;          
+    border: none;           
+    padding: 10px 20px;      
+    border-radius: 8px;     
+    cursor: pointer;         
+    font-size: 16px;          
+  }
+
+  .links button:hover { /* 마우스 올리면 색 진해짐 */
+    background-color: rgb(117, 182, 207); 
+  }
+
+
+    .mainText01 {
+    font-family: 'NoonnuBasicGothicRegular'; 
+    }
+
+    .mainText01 h1 {
+    line-height: 1.8; 
+    margin-top: 50px;
+    text-align: center;
+    }
+
+
+
+
+</style>
+
+</head>
+<body>
+<header> <!-- 상단 로고 및 메뉴바 -->
+    <h3 class="logo" style="margin-top: 40px; margin-left: 35px;">
+        <a href="main.html">    <!-- 상단 로고 클릭 시 메인화면으로 이동 -->
+        <img src="sc/logo.svg" alt="Capture CJR Logo" style="height: auto; width: 100%; border: 4px;">
+        </a>
+    </h3>
+<nav class="links">  <!-- 메뉴 페이지 링크 수정바람 -->
+<a href=".html">Store</a>
+<a href=".html">Map</a> 
+<a href=".html">Who we are</a>
+<a href="login.html">My profile</a>
+<button onclick="location.href='capturelist.html'">List</button>
+</nav>
+</header>
+
+<div class = "mainIntroduce">
+    <div class = "mainText01">
+        <h1>
+            걸으며 만나는 작은 친구들
+            <br>
+            일상 속 특별한 모험의 시작
+            <br>
+            캡쳐! 캡쮸리!!
+        </h1>
+    </div>
+</div>
+
+
+
+</main>
+</body></html>
+
