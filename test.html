@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<div id="map" style="height: 1000px;"></div>
+
+<script>
+  const map = L.map('map').setView([37.5512, 126.9882], 15);  // 초기 위치 설정
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  // 목표 지점을 마커로 표시
+  L.marker([37.5512, 126.9882]).addTo(map)
+    .bindPopup('목표 지점')
+    .openPopup();
+
+    if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const userLat = position.coords.latitude;
+        const userLng = position.coords.longitude;
+
+        // 현재 위치에 마커 추가
+        const userMarker = L.marker([userLat, userLng]).addTo(map)
+          .bindPopup('현재 위치')
+          .openPopup();
+
+        // 현재 위치로 지도 이동
+        map.setView([userLat, userLng], 15);
+      },
+      (error) => {
+        console.error("Error getting location:", error.message);
+      }
+    );
+  } else {
+    alert("Geolocation is not supported by this browser.");
+  }
+
+</script>
